@@ -1,4 +1,4 @@
-package com.javabycode.springboot.model;
+package Spring.Boot.demo.model;
 	
 public class User {
 
