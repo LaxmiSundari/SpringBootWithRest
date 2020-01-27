@@ -1,7 +1,10 @@
-package com.javabycode.springboot.controller;
+package Spring.Boot.demo.controller;
 
 import java.util.List;
 
+import Spring.Boot.demo.model.User;
+import Spring.Boot.demo.service.UserService;
+import Spring.Boot.demo.util.ErrorType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -13,9 +16,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import com.javabycode.springboot.model.User;
-import com.javabycode.springboot.service.UserService;
-import com.javabycode.springboot.util.ErrorType;
+
 
 @RestController
 @RequestMapping("/")
@@ -37,7 +38,7 @@ public class RestfulController {
 	public ResponseEntity<?> findUser(@PathVariable("id") long id) {
 		User user = userService.findById(id);
 		if (user == null) {
-			return new ResponseEntity<ErrorType>(new ErrorType("ERROR: Id =" + id 
+			return new ResponseEntity<ErrorType>(new ErrorType("ERROR: Id =" + id
 					+ " not found"), HttpStatus.NOT_FOUND);
 		}
 		return new ResponseEntity<User>(user, HttpStatus.OK);
