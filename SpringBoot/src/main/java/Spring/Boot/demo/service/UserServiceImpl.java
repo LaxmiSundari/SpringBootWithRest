@@ -1,13 +1,12 @@
-package com.javabycode.springboot.service;
+package Spring.Boot.demo.service;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 
+import Spring.Boot.demo.model.User;
 import org.springframework.stereotype.Service;
-
-import com.javabycode.springboot.model.User;
 
 
 
