@@ -1,9 +1,11 @@
-package com.javabycode.springboot.service;
+package Spring.Boot.demo.service;
 
+
+import Spring.Boot.demo.model.User;
 
 import java.util.List;
 
-import com.javabycode.springboot.model.User;
+
 
 public interface UserService {
 	
