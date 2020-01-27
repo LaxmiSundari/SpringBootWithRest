@@ -1,4 +1,4 @@
-package com.javabycode.springboot.util;
+package Spring.Boot.demo.util;
 
 
 public class ErrorType {
